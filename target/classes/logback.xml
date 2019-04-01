@@ -23,4 +23,14 @@ See here for more details: http://gordondickens.com/wordpress/2013/03/27/sawing-
     <root level="info">
         <appender-ref ref="console"/>
     </root>
+    
+    <logger name="java.sql">
+        <level value="debug" />
+    </logger>
+    
+    <logger name="jdbc.sqlonly" additivity="false">
+  		<level value="info" />
+  		<appender-ref ref="console" />
+    </logger>
+    
 </configuration>
