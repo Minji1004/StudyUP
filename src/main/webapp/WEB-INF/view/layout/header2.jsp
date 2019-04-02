@@ -5,8 +5,8 @@
 <%
    String cp = request.getContextPath();
 %>
-	<section class="banner" role="banner">
-        <header id="header">
+
+<header id="header" class="fixed2">
             <div class="header-content clearfix">
                 <a class="logo" href="#"><img src="<%=cp%>/resource/images/logo.png" alt=""></a>
                 <nav class="navigation" role="navigation">
@@ -21,7 +21,6 @@
                     </ul>
                 </nav>
                 <div class="header-right">
-                <%-- 
 		<div style="padding-top: 20px; float: right;">
 			<c:if test="${empty sessionScope.member}">
 				<a href="<%=cp%>/">로그인</a>
@@ -37,20 +36,8 @@
                    		 	<a href="<%=cp%>/admin">관리자</a>
 				</c:if>
 			</c:if>
-		</div>--%>
+		</div>
 	</div>
             </div><!-- header content -->
             
         </header><!-- header -->
-        <div class="container">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="banner-text text-center">
-                    <h1>Your Favorite One Page Multi Purpose Template</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
-                    <a href="#" class="btn btn-large">Find out more</a>
-                </div><!-- banner text -->
-            </div>
-        </div>
-	</section>
-
-
