@@ -7,6 +7,6 @@
 
 <div class="body-container" style="width: 700px;">
     <div>
-        관리자 메인 화면 입니다.
+      
     </div>
 </div>
