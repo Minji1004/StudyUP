@@ -6,43 +6,52 @@
    String cp = request.getContextPath();
 %>
 
-<div class="header-top">
-    <div class="header-left">
-        <p style="margin: 2px;">
-            <a href="<%=cp%>/" style="text-decoration: none;">
-                <span style="width: 200px; height: 70; position: relative; left: 0; top:20px; color: #2984ff; filter: mask(color=red) shadow(direction=135) chroma(color=red);font-style: italic; font-family: arial black; font-size: 30px; font-weight: bold;">SPRING</span>
-            </a>
-        </p>
-    </div>
-    <div class="header-right">
-        <div style="padding-top: 20px;  float: right;">
-            <c:if test="${empty sessionScope.member}">
-                <a href="<%=cp%>/">로그인</a>
-                    &nbsp;|&nbsp;
-                <a href="<%=cp%>/">회원가입</a>
-            </c:if>
-            <c:if test="${not empty sessionScope.member}">
-                <span style="color:blue;">${sessionScope.member.userName}</span>님
-                &nbsp;|&nbsp;
-                <a href="<%=cp%>/">로그아웃</a>
-                <c:if test="${sessionScope.member.userId=='admin'}">
-                    &nbsp;|&nbsp;
-                    <a href="<%=cp%>/admin">관리자</a>
-                </c:if>
-            </c:if>
-        </div>
-    </div>
-</div>
+<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="#"><img src="<%=cp%>/resource/images/logo.png" alt=""></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+						<li><a href="">마이페이지</a></li>
+						<li><a href="">타이머</a></li>
+						<li><a href="">스터디</a></li>
+						<li><a href="">스터디룸</a></li>
+						<li><a href="">강의</a></li>
+						<li><a href="">커뮤니티</a></li>
+						<li><a href="">고객센터</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+                <div class="header-right">
 
-<div class="menu">
-    <ul class="nav">
-        <li><a href="<%=cp%>/company/info">회사소개</a></li>
-        <li><a href="<%=cp%>/guest/guest">커뮤니티</a></li>
-        <li><a href="#">스터디룸</a></li>
-        <c:if test="${not empty sessionScope.member}">
-            <li><a href="<%=cp%>/mypage/info">마이페이지</a></li>
-        </c:if>
-        <li><a href="<%=cp%>/faq/faq">고객센터</a></li>
-        <li style="float: right;"><a href="#"><span style="font-size: 17px; font-weight: 700;">▦</span></a></li>
-    </ul>      
-</div>
+		<div id="login">
+			<c:if test="${empty sessionScope.member}">
+				<a href="<%=cp%>/">로그인</a>
+                   		 &nbsp;|&nbsp;
+               		 <a href="<%=cp%>/">회원가입</a>
+			</c:if>
+			<c:if test="${not empty sessionScope.member}">
+				<span style="color: blue;">${sessionScope.member.userName}</span>님
+               		 	 &nbsp;|&nbsp;
+               			 <a href="<%=cp%>/">로그아웃</a>
+				<c:if test="${sessionScope.member.userId=='admin'}">
+                   			 &nbsp;|&nbsp;
+                   		 	<a href="<%=cp%>/admin">관리자</a>
+				</c:if>
+			</c:if>
+		</div>
+	</div>
+            </div><!-- header content -->
+
+        </header><!-- header -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                    <h1>Your Favorite One Page Multi Purpose Template</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+                    <a href="#" class="btn btn-large">Find out more</a>
+                </div><!-- banner text -->
+            </div>
+        </div>
+	</section>
+
