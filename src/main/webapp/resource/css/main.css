@@ -106,14 +106,14 @@ ul li {
   #header .logo {
     float: left; }
 
-#header.fixed {
+#header.fixed, #header.fixed2{
   background-color: #5E8B76; 
   opacity: inherit;
   }
-  #header.fixed .header-content {
+  #header.fixed .header-content,   #header.fixed2 .header-content {
     border-bottom: 0;
     padding: 25px 0; }
-  #header.fixed .nav-toggle {
+  #header.fixed .nav-toggle,   #header.fixed2 .nav-toggle {
     top: 18px; }
 
 .navigation.open {
