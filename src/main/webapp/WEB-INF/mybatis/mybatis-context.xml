@@ -62,19 +62,4 @@
          <property name="transactionManager" ref="transactionManager" />
     </bean>
      
-    <!-- 트랜잭션어드바이스(tx:advice)를통한선언적인방식트랜잭션 -->
-	<tx:advice id="txAdvice" transaction-manager="transactionManager">
-	    <tx:attributes>
-	        <tx:method name="insert*" rollback-for="Exception"/>
-	        <tx:method name="update*" rollback-for="Exception"/>
-	        <tx:method name="delete*" rollback-for="Exception"/>
-	    </tx:attributes>
-	</tx:advice>
-	
-	<aop:config proxy-target-class="true">
-	    <!-- com.sp 및 하위 패키지의 Service로 끝나는 클래스의 모든 메소드 -->
-	    <aop:pointcut id="serviceOperation" expression="execution(public * com.sp..*Service.*(..))" />
-	    <aop:advisor id="transactionAdvisor" pointcut-ref="serviceOperation" advice-ref="txAdvice"/>
-	</aop:config>
-     
 </beans>
