@@ -223,5 +223,30 @@
             </div>
         </div>
     </section><!-- teams -->
+   
+<div class="footer-top footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h5>스터디룸 운영하기</h5>
+                        <p>스터디 가페, 강의실을 studyUp에 올려서 운영해보세요.</p>
+                        <a href="#" class="btn btn-large">스터디룸 운영페이지 이동</a>
+                    </div>
+                    <div class="footer-col col-md-4">
+                       	<h5>studyUp에서 가르치기</h5>
+                        <p>studyUp에서 자신이 좋아하는 분야를 가르쳐보세요.</p>
+                        <a href="#" class="btn btn-large">강의 운영페이지 이동</a>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h5>고객센터</h5>
+                        <p>studyUp에 대해 궁금하신 점을 언제든지 물어보세요.</p>
+                        <a href="#" class="btn btn-large">고객센터로 이동</a>    
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer top -->
+
+   
+
 
    

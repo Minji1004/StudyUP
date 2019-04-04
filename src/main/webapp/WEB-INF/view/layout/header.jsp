@@ -18,7 +18,6 @@
 						<li><a href="">스터디룸</a></li>
 						<li><a href="">강의</a></li>
 						<li><a href="">커뮤니티</a></li>
-						<li><a href="">고객센터</a></li>
                     </ul>
                 </nav>
                 <a href="#" class="nav-toggle">Menu<span></span></a>

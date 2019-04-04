@@ -411,28 +411,6 @@ ul li {
       color: #fff; }
 
 /* ==========================================================================
-	$Testimonials
-========================================================================== */
-.testimonials {
-  background-color: #53354a;
-  position: relative; }
-  .testimonials blockquote {
-    border: 0;
-    margin: 0;
-    padding: 100px 15% 0; }
-  .testimonials p {
-    color: #fff;
-    font: italic 36px "Cardo", Georgia, "Times New Roman", serif; }
-  .testimonials cite {
-    color: #fff;
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    margin-top: 30px;
-    text-transform: uppercase; }
-
-/* ==========================================================================
 	$Download
 ========================================================================== */
 .download h3 {
@@ -448,10 +426,14 @@ ul li {
 	$Footer
 ========================================================================== */
 .footer {
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .footer-top {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     background-color: #9FCCB7;
-    padding-top: 50px; }
+    padding-top: 50px; 
+}
   .footer-bottom {
     background-color: #5E8B76;
     padding: 20px 0; }
@@ -462,19 +444,11 @@ ul li {
   .footer h5 {
     margin-bottom: 20px; }
   .footer p {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.9); }
   .footer a {
     color: #fff; }
     .footer a:hover {
       color: #e84545; }
-  .footer .footer-share {
-    margin-top: 0; }
-    .footer .footer-share li {
-      display: inline-block;
-      float: none; }
-    .footer .footer-share a {
-      border-width: 2px;
-      color: #fff; }
   .footer .fa-heart {
     color: #e84545;
     font-size: 11px;
