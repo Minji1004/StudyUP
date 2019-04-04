@@ -14,7 +14,7 @@
                     <ul class="primary-nav">
 						<li><a href="">마이페이지</a></li>
 						<li><a href="">타이머</a></li>
-						<li><a href="">스터디</a></li>
+						<li><a href="<%=cp%>/study">스터디</a></li>
 						<li><a href="">스터디룸</a></li>
 						<li><a href="">강의</a></li>
 						<li><a href="">커뮤니티</a></li>
