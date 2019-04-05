@@ -54,7 +54,7 @@ public class MemberController {
 		if(dto.getIsAdmin().equals("0")) list.add(0);	//사용자
 		if(dto.getIsAdmin().equals("1")) list.add(1);	//관리자
 		if(dto.getBlicenseKindNum()==0) list.add(2);	//스터디룸 사장님
-		if(dto.getBlicenseKindNum()==1) list.add(3);	//스터디룸 사장님
+		if(dto.getBlicenseKindNum()==1) list.add(3);	//강사
 		
 		info.setUserType(list);	//리스트를 정리해준다.
 

@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LectureController {
 
 	@RequestMapping(value ="/lecture/main", method=RequestMethod.GET)
-	public String main() {
+	public String main() {		
+		
 		return ".lecture.main";
 	}
 	

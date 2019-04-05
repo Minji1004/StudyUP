@@ -235,7 +235,7 @@
                     <div class="footer-col col-md-4">
                        	<h5>studyUp에서 가르치기</h5>
                         <p>studyUp에서 자신이 좋아하는 분야를 가르쳐보세요.</p>
-                        <a href="#" class="btn btn-large">강의 운영페이지 이동</a>
+                        <a href="<%=cp%>/teacher/check" class="btn btn-large">강의 운영페이지 이동</a>
                     </div>
                     <div class="footer-col col-md-4">
                         <h5>고객센터</h5>
