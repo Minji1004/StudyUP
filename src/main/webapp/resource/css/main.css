@@ -117,10 +117,6 @@ ul li {
   #header.fixed .nav-toggle,   #header.fixed2 .nav-toggle {
     top: 18px; }
     
-#headerBox{
-	width: 100%;
-	height: 73.977px;
-}
 
 .navigation.open {
   opacity: 0.9;
