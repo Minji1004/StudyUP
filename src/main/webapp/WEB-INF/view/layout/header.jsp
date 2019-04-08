@@ -9,14 +9,14 @@
 <section class="banner" role="banner">
         <header id="header">
             <div class="header-content clearfix">
-                <a class="logo" href="#"><img src="<%=cp%>/resource/images/logo.png" alt=""></a>
+                <a class="logo" href="<%=cp%>/main"><img src="<%=cp%>/resource/images/logo.png" alt=""></a>
                 <nav class="navigation" role="navigation">
                     <ul class="primary-nav">
 						<li><a href="">마이페이지</a></li>
 						<li><a href="">타이머</a></li>
 						<li><a href="<%=cp%>/study">스터디</a></li>
 						<li><a href="">스터디룸</a></li>
-						<li><a href="">강의</a></li>
+						<li><a href="<%=cp%>/lecture/main">강의</a></li>
 						<li><a href="">커뮤니티</a></li>
                     </ul>
                 </nav>
@@ -25,12 +25,12 @@
 
 		<div id="login">
 			<c:if test="${empty sessionScope.member}">
-				<a href="<%=cp%>/">로그인</a>
+				<a href="<%=cp%>/member/login">로그인</a>
                    		 &nbsp;|&nbsp;
-               		 <a href="<%=cp%>/">회원가입</a>
+               		 <a href="<%=cp%>/member/member">회원가입</a>
 			</c:if>
 			<c:if test="${not empty sessionScope.member}">
-				<span style="color: blue;">${sessionScope.member.userName}</span>님
+				<span style="color: white;">${sessionScope.member.userName}</span>님
                		 	 &nbsp;|&nbsp;
                			 <a href="<%=cp%>/">로그아웃</a>
 				<c:if test="${sessionScope.member.userId=='admin'}">

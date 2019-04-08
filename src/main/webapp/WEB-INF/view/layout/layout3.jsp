@@ -14,6 +14,7 @@
 <meta charset="UTF-8">
 <title>spring</title>
 
+	<link rel="stylesheet" href="<%=cp%>/resource/css/lecture.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/bootstrap.min.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/jquery.fancybox.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/main.css">
