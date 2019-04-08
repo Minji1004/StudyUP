@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.sp.member.SessionInfo;
 
-@Controller("teacher.lectureController")
+@Controller("teacher.teacherController")
 public class TeacherController {
 	
 	@RequestMapping(value ="/teacher/check", method=RequestMethod.GET)
@@ -33,5 +33,5 @@ public class TeacherController {
 
 		return ".teacher.register";
 	}
-	
+
 }

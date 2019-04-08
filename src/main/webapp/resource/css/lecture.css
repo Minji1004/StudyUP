@@ -31,10 +31,23 @@ div #registerBox h3{
 	margin: 30px auto;	
 }
 
-#registerBox textarea, #registerBox table{
+#registerBox textarea{
 	margin: 0 auto;
 	width: 500px;
 	height: 100px;
+	text-align: left;
+	color: black;
+}
+
+#registerBox .check{
+	margin: 0 auto;
+	width: 500px;
+	text-align: left;
+}
+
+#registerBox table{
+	margin: 0 auto;
+	width: 500px;
 	text-align: left;
 }
 

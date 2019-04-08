@@ -30,7 +30,7 @@
                		 <a href="<%=cp%>/member/member">회원가입</a>
 			</c:if>
 			<c:if test="${not empty sessionScope.member}">
-				<span style="color: blue;">${sessionScope.member.userName}</span>님
+				<span style="color: white;">${sessionScope.member.userName}</span>님
                		 	 &nbsp;|&nbsp;
                			 <a href="<%=cp%>/">로그아웃</a>
 				<c:if test="${sessionScope.member.userId=='admin'}">
