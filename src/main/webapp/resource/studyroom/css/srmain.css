@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* --------------------- 사이드 바 --------------------- */
+
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .3s;
@@ -58,4 +60,20 @@ body {
 
 @media screen and (min-width: 451px) {
   #srMySidenav {width: 120px;}
+}
+
+
+
+/* --------------------- 메뉴 바 --------------------- */
+
+.srPic {
+	display: flex;
+	min-height: 90px;
+}
+
+.srPicTagContent {
+	padding: 5px  10px 5px 10px;
+	font-family:'맑은고딕';
+	font-size: 8pt;
+	min-height: 80px; 
 }

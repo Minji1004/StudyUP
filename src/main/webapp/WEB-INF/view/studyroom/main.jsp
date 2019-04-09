@@ -5,32 +5,45 @@
 <%
 	String cp=request.getContextPath();
 %>
-<link rel="stylesheet" href="<%=cp%>/resource/studyroom/css/srmain.css" />
 <script type="text/javascript">
-function srOpenNav() {
-    document.getElementById("srMySidenav").style.width = "120px";
-    $("#srMain").hide();
-    // document.body.style.backgroundColor = "#438042";
-}
 
-function srCloseNav() {
-    document.getElementById("srMySidenav").style.width = "0";
-    $("#srMain").show();
-    //document.body.style.backgroundColor = "white";
-}
+// 좌측 사이드바 메뉴버튼
+	function srOpenNav() {
+	    document.getElementById("srMySidenav").style.width = "120px";
+	    $("#srMain").hide();
+	    // document.body.style.backgroundColor = "#438042";
+	}
 
+// 좌측 사이드바 닫기 버튼
+	function srCloseNav() {
+	    document.getElementById("srMySidenav").style.width = "0";
+	    $("#srMain").show();
+	    //document.body.style.backgroundColor = "white";
+	}
+	
 </script>
 
-
-<div id=headerBox style="height: 100px;">
-
+<!-- 화면 상단 띄우기 -->
+<div style="height: 100px;">
 </div>
 
 
 <body style="background-color: #FDFFF8">
-	<!-- 사이드 바 -->
+	
+	
+	<!-- 
+		사이드 바
+		#srMain 		: 메뉴 클릭		(앞 sr부분을 각 게시판에 맞게 수정하세요.)
+		#srMySidenav 	: 사이드바 메뉴 	(앞 sr부분을 각 게시판에 맞게 수정하세요.)
+		
+		글어갈 때 필요한 것들
+		1. 스크립트의 사이드바 function2개
+		2. resource/studyroom/css/srmain.css 파일
+		3. layout3에 css 링크넣기	
+	-->
+	
 	<div id="srMain">
-		<span style="font-size:40px;cursor:pointer" onclick="srOpenNav()">☰ </span>
+		<span style="font-size:40px; cursor:pointer" onclick="srOpenNav()">☰ </span>
 	</div>
 	<div id="srMySidenav" class="srMySidenav">
 		<a>&nbsp;</a>		
@@ -104,13 +117,13 @@ function srCloseNav() {
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 						
@@ -126,10 +139,10 @@ function srCloseNav() {
 					</div>
 					
 					<!-- 사진 관련 태그들 -->
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">NHK</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★☆☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">어서오세요. NHK에!</div>
+						<div class="srPicTagContent">어서오세요. NHK에!</div>
 					</div>
 				</div>
 			</div>
@@ -147,13 +160,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -167,10 +180,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">오성스터디카페</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★★☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">쾌적한 공간을 제공해드립니다!</div>
+						<div class="srPicTagContent">쾌적한 공간을 제공해드립니다!</div>
 					</div>
 				</div>
 			</div>
@@ -188,13 +201,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -208,10 +221,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">라쿠니라챠</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★☆☆☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">너굴맨이 얼렸으니 조심하라구!!</div>
+						<div class="srPicTagContent">너굴맨이 얼렸으니 조심하라구!!</div>
 					</div>
 				</div>
 			</div>
@@ -229,13 +242,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -249,10 +262,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">기가스터딥</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★☆☆☆☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">메가로는 모자라다!! 기가급으로 승부하자!</div>
+						<div class="srPicTagContent">메가로는 모자라다!! 기가급으로 승부하자!</div>
 					</div>
 				</div>
 			</div>
@@ -270,13 +283,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -290,10 +303,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">이to스</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★★☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">옆집 메가보단 쌉니다.!</div>
+						<div class="srPicTagContent">옆집 메가보단 쌉니다.!</div>
 					</div>
 				</div>
 			</div>
@@ -311,13 +324,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -331,10 +344,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">카페나라</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★★★</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">사랑스러운 동물들이 함께 하는 카페나라입니다.</div>
+						<div class="srPicTagContent">사랑스러운 동물들이 함께 하는 카페나라입니다.</div>
 					</div>
 				</div>
 			</div>
@@ -352,13 +365,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -372,10 +385,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">라쿠니라챠</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★☆☆☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">너굴맨이 얼렸으니 조심하라구!!</div>
+						<div class="srPicTagContent">너굴맨이 얼렸으니 조심하라구!!</div>
 					</div>
 				</div>
 			</div>			
@@ -393,13 +406,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -413,10 +426,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div style="" onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">기가스터딥</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★☆☆☆☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">메가로는 모자라다!! 기가급으로 승부하자!</div>
+						<div class="srPicTagContent">메가로는 모자라다!! 기가급으로 승부하자!</div>
 					</div>
 				</div>
 			</div>	
@@ -434,13 +447,13 @@ function srCloseNav() {
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%" style="display: flex;">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -454,10 +467,10 @@ function srCloseNav() {
 							</a>
 						</div>
 					</div>
-					<div onclick="location.href='<%=cp%>/studyroom/main';">
+					<div onclick="location.href='#';">
 						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">이to스</div>
 						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★★☆</div>
-						<div style="padding: 5px  10px 5px 10px; font-family:'맑은고딕'; font-size: 8pt;">옆집 메가보단 쌉니다.!</div>
+						<div class="srPicTagContent">옆집 메가보단 쌉니다.!</div>
 					</div>
 				</div>
 			</div>	

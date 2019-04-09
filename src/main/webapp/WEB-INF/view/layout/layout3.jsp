@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="<%=cp%>/resource/css/responsive.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- srmain.css : studyroom 스타일 -->
+    <link rel="stylesheet" href="<%=cp%>/resource/studyroom/css/srmain.css" />
+    
 <link rel="stylesheet" href="<%=cp%>/resource/jquery/css/smoothness/jquery-ui.min.css" type="text/css">
 
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery-1.12.4.min.js"></script>
@@ -45,10 +49,9 @@
 
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery.ui.datepicker-ko.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="<%=cp%>/resource/js/bootstrap.min.js"></script>
-    <script src="<%=cp%>/resource/js/jquery.fancybox.pack.js"></script>
-    <script src="<%=cp%>/resource/js/jquery.waypoints.min.js"></script>
-    <script src="<%=cp%>/resource/js/main.js"></script>
+<script src="<%=cp%>/resource/js/bootstrap.min.js"></script>
+<script src="<%=cp%>/resource/js/jquery.fancybox.pack.js"></script>
+<script src="<%=cp%>/resource/js/jquery.waypoints.min.js"></script>
+<script src="<%=cp%>/resource/js/main.js"></script>
 </body>
 </html>
