@@ -7,6 +7,7 @@ import java.util.List;
 public class SessionInfo {
 	private String userId;
 	private String userName;
+	private int userNum;
 	private int memberLevel;
 	private String blicenseNum;
 	private List<Integer> userType;
@@ -41,4 +42,11 @@ public class SessionInfo {
 	public void setMemberLevel(int memberLevel) {
 		this.memberLevel = memberLevel;
 	}
+	public int getUserNum() {
+		return userNum;
+	}
+	public void setUserNum(int userNum) {
+		this.userNum = userNum;
+	}
+	
 }

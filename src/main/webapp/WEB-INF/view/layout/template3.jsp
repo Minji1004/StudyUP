@@ -6,6 +6,7 @@
    String cp = request.getContextPath();
 %>
 
-<div>
-여기는  선생님 관리 페이지입니다.
+<div class="section container">
+
+
 </div>
