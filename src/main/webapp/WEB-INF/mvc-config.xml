@@ -63,6 +63,7 @@
     		<mvc:exclude-mapping path="/member/login"/>
     		<mvc:exclude-mapping path="/member/logout"/>
     		<mvc:exclude-mapping path="/member/member"/>
+    		<mvc:exclude-mapping path="/studyroom/main"/>
     		<mvc:exclude-mapping path="/member/userIdCheck"/>
     		<bean class = "com.sp.member.LoginCheckInterceptor"/>
     	</mvc:interceptor>

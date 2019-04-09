@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .3s;
+}
+
+.srMySidenav {
+    height: 240px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.srMySidenav a {
+    padding: 4px 4px 4px 24px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #dddddd;
+    display: block;
+    transition: 0.7s;    
+}
+
+.srMySidenav a:hover, .offcanvas a:focus{
+    color: #ffffff;
+}
+
+.srClosebtn {
+    top: 0;
+    right: 25px;
+    font-size: 15px !important;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#srMain {
+	height: 50px;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 10px;
+    transition: margin-left .3s;
+    padding: 16px;
+    padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .srMySidenav {padding-top: 15px;}
+  .srMySidenav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 451px) {
+  #srMySidenav {width: 120px;}
+}

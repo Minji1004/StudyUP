@@ -7,8 +7,9 @@ import java.util.List;
 public class SessionInfo {
 	private String userId;
 	private String userName;
+	private int userNum;
 	private int memberLevel;
-	private int blicenseNum;
+	private String blicenseNum;
 	private List<Integer> userType;
 	
 	public List<Integer> getUserType() {
@@ -17,10 +18,10 @@ public class SessionInfo {
 	public void setUserType(List<Integer> userType) {
 		this.userType = userType;
 	}
-	public int getBlicenseNum() {
+	public String getBlicenseNum() {
 		return blicenseNum;
 	}
-	public void setBlicenseNum(int blicenseNum) {
+	public void setBlicenseNum(String blicenseNum) {
 		this.blicenseNum = blicenseNum;
 	}
 	public String getUserId() {
@@ -41,4 +42,11 @@ public class SessionInfo {
 	public void setMemberLevel(int memberLevel) {
 		this.memberLevel = memberLevel;
 	}
+	public int getUserNum() {
+		return userNum;
+	}
+	public void setUserNum(int userNum) {
+		this.userNum = userNum;
+	}
+	
 }

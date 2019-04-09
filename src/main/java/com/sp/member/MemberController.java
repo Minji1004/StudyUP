@@ -35,10 +35,10 @@ public class MemberController {
 			model.addAttribute("message", "아이디 또는 패스워드가 일치하지 않습니다.");
 			return "member/login";
 		}
-		
 	
 		
 		SessionInfo info=new SessionInfo();
+		info.setUserNum(dto.getUserNum());  //usernum info에 추가함. (민지)
 		info.setUserName(dto.getNickname());
 		info.setUserId(dto.getUserId());
 		info.setBlicenseNum(dto.getBlicenseNum());
@@ -54,7 +54,7 @@ public class MemberController {
 		if(dto.getIsAdmin().equals("0")) list.add(0);	//사용자
 		if(dto.getIsAdmin().equals("1")) list.add(1);	//관리자
 		if(dto.getBlicenseKindNum()==0) list.add(2);	//스터디룸 사장님
-		if(dto.getBlicenseKindNum()==1) list.add(3);	//스터디룸 사장님
+		if(dto.getBlicenseKindNum()==1) list.add(3);	//강사
 		
 		info.setUserType(list);	//리스트를 정리해준다.
 
