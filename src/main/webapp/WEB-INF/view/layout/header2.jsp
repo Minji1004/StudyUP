@@ -11,13 +11,12 @@
                 <a class="logo" href="<%=cp%>/main"><img src="<%=cp%>/resource/images/logo.png" alt=""></a>
                 <nav class="navigation" role="navigation">
                     <ul class="primary-nav">
-						<li><a href="">마이페이지</a></li>
-						<li><a href="">타이머</a></li>
-						<li><a href="">스터디</a></li>
-						<li><a href="">스터디룸</a></li>
+						<li><a href="<%=cp%>/mypage/main">마이페이지</a></li>
+						<li><a href="<%=cp%>/timer/main">타이머</a></li>
+						<li><a href="<%=cp%>/study/main">스터디</a></li>
+						<li><a href="<%=cp%>/studyroom/main">스터디룸</a></li>
 						<li><a href="<%=cp%>/lecture/main">강의</a></li>
-						<li><a href="">커뮤니티</a></li>
-						<li><a href="">고객센터</a></li>
+						<li><a href="<%=cp%>/community/main">커뮤니티</a></li>
                     </ul>
                 </nav>
                 <a href="#" class="nav-toggle">Menu<span></span></a>

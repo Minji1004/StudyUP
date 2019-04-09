@@ -52,8 +52,15 @@ public class MemberServiceImpl implements MemberService{
 
 	@Override
 	public Member readMember(String userId) {
-		// TODO Auto-generated method stub
-		return null;
+		Member dto=null;
+		
+		try {
+			dto=dao.selectOne("member.readMember", userId);
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		}
+		
+		return dto;
 	}
 
 	@Override

@@ -12,6 +12,7 @@ $(document).ready(function(){
     	 $('#register').css('background-image', "url('<%=cp%>/resource/images/blackboard2.jpg')");  
 	else  //아래에 스터디룸에 해당하는 이미지 넣으면 됨. 
 		$('#register').css('background-image', "url('<%=cp%>/resource/images/blackboard.jpeg')");  
+	
  }); 
  
 $(function(){
@@ -22,12 +23,54 @@ $(function(){
     });
 });
 
+function sendOk() {
+    var f = document.registerForm;
+
+	var str = f.blicenseNum.value;
+    if(!str) {
+        alert("사업자 번호를 입력하세요. ");
+        f.blicenseNum.focus();
+        return;
+    }
+    
+    var str = f.bank.value;
+    if(str=='') {
+        alert("은행을 선택하세요 ");
+        f.bank.focus();
+        return;
+    }   
+
+	str = f.accountNum.value;
+    if(!str) {
+        alert("계좌번호를 입력하세요. ");
+        f.content.focus();
+        return;
+    }
+
+	str = f.service.checked;
+    if(!str) {
+        alert("서비스 이용약관에 동의해주세요. ");
+        f.content.focus();
+        return;
+    }
+    
+	str = f.privacy.checked;
+    if(!str) {
+        alert("개인정보 활용에 동의해주세요. ");
+        f.content.focus();
+        return;
+    }
+
+    
+	f.action="<%=cp%>/register/submit";
+
+ 	f.submit();
+    
+}
 </script> 
 
 <section id="register" class="section">
-
 <div id="registerBox" class="container">
-<div id="container">
 <c:if test="${mode eq 'teacher'}">
 	<h3>선생님 등록하기</h3>
 </c:if>
@@ -36,10 +79,10 @@ $(function(){
 </c:if>
 	<hr>
 
-	<form>
+	<form name="registerForm" method="post">
 	<table>
 		<tr><th>이름</th><td>${sessionScope.member.userName}</td></tr>
-		<tr><th>전화번호</th><td>tel</td></tr>
+		<tr><th>전화번호</th><td>${tel}</td></tr>
 	</table>
 	<span>회원정보 변경은 마이페이지>회원정보에서 가능합니다.</span>
 	<br>
@@ -53,11 +96,10 @@ $(function(){
 			<th>매출입금은행</th>
 			<td>
 				<select name="bank"> 
-					<option>은행 선택</option>
-					<option>국민은행</option>
-					<option>신한은행</option>
-					<option>농협은행</option>
-					<option>하나은행</option>
+					<option value="">은행 선택</option>
+				<c:forEach var="bank" items="${bankList}">
+					<option value="${bank.bankNum}">${bank.bankName}</option>
+				</c:forEach>
 				</select>
 			</td>
 		</tr>
@@ -127,12 +169,10 @@ $(function(){
 
 <input type="hidden" name="mode" value="${mode}">
 	<div class="buttons">
-		<button type="button" class="btn btn-large" id="submit()">등록하기</button>
+		<button type="button" class="btn btn-large" onclick="sendOk();">등록하기</button>
 		<button type="reset" class="btn btn-large">다시입력</button>
 		<button type="button" class="btn btn-large" onclick="location.href='<%=cp%>/main'">메인으로</button>
 	</div>
 	</form>
-	</div>
 </div>
-
 </section>
