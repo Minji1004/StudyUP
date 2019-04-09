@@ -14,21 +14,21 @@ public class MemberServiceImpl implements MemberService{
 	private CommonDAO  dao;
 	
 	@Override
-	public Member loginMember(String userId) {
-		Member dto=null;
+	public List<Member> loginMember(String userId) {
+		List<Member> list=null;
 		
 		try {
-			dto=dao.selectOne("member.loginMember", userId);
+			list = dao.selectList("member.loginMember", userId);
 		} catch (Exception e) {
 			System.out.println(e.toString());
 		}
 		
-		return dto;
+		return list;
 	}
 
 	@Override
 	public int insertMember(Member dto) {
-		// TODO Auto-generated method stub
+		
 		return 0;
 	}
 
@@ -52,15 +52,8 @@ public class MemberServiceImpl implements MemberService{
 
 	@Override
 	public Member readMember(String userId) {
-		Member dto=null;
-		
-		try {
-			dto=dao.selectOne("member.readMember", userId);
-		} catch (Exception e) {
-			System.out.println(e.toString());
-		}
-		
-		return dto;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override

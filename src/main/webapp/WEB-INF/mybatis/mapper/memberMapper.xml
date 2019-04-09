@@ -4,7 +4,7 @@
 <mapper namespace="member">
 
 <select id="loginMember" parameterType="String" resultType="com.sp.member.Member">
-	SELECT m.userNum, userId, nickname, userPwd, enabled, 
+	SELECT m.userNum, userId, nickname, userPwd, enabled, tel,
 		created, lastLogin, picture, isAdmin, blicenseNum, blicenseKindNum
 		FROM memberInfo m 
 	    LEFT OUTER JOIN blicense bl ON m.userNum = bl.userNum

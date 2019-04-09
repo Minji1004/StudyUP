@@ -11,7 +11,7 @@ $(document).ready(function(){
 	if('${mode}'=="teacher")
     	 $('#register').css('background-image', "url('<%=cp%>/resource/images/blackboard2.jpg')");  
 	else  //아래에 스터디룸에 해당하는 이미지 넣으면 됨. 
-		$('#register').css('background-image', "url('<%=cp%>/resource/images/blackboard.jpeg')");  
+		$('#register').css('background-image', "url('<%=cp%>/resource/images/studyroom.jpg')");  
 	
  }); 
  
@@ -33,14 +33,14 @@ function sendOk() {
         return;
     }
     
-    var str = f.bank.value;
+    var str = f.bankNum.value;
     if(str=='') {
         alert("은행을 선택하세요 ");
         f.bank.focus();
         return;
     }   
 
-	str = f.accountNum.value;
+	str = f.account.value;
     if(!str) {
         alert("계좌번호를 입력하세요. ");
         f.content.focus();
@@ -95,7 +95,7 @@ function sendOk() {
 		<tr>
 			<th>매출입금은행</th>
 			<td>
-				<select name="bank"> 
+				<select name="bankNum"> 
 					<option value="">은행 선택</option>
 				<c:forEach var="bank" items="${bankList}">
 					<option value="${bank.bankNum}">${bank.bankName}</option>
@@ -105,7 +105,7 @@ function sendOk() {
 		</tr>
 		<tr>
 			<th>계좌번호</th>
-			<td><input type="text" name="accountNum" class="textBox" placeholder=" 숫자만 가능합니다."></td></tr>
+			<td><input type="text" name="account" class="textBox" placeholder=" 숫자만 가능합니다."></td></tr>
 	</table>
 	<hr>
 

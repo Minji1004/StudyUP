@@ -5,6 +5,29 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+
+
+<!-- 4 단 일반 -->
+   <definition name=".fourLayout" template="/WEB-INF/view/layout/layout4.jsp">
+       <put-attribute name="title" value="spring" />
+        <put-attribute name="header" value="/WEB-INF/view/layout/header.jsp" />
+        <put-attribute name="left" value="/WEB-INF/view/left.jsp" />
+      <put-attribute name="body" value="/WEB-INF/view/main/main.jsp" />
+      <put-attribute name="footer" value="/WEB-INF/view/layout/footer.jsp" />
+   </definition>
+   <definition name=".four.*.*.*" extends=".fourLayout">
+        <put-attribute name="left" value="/WEB-INF/view/{1}/left.jsp" />
+      <put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"/>
+   </definition>
+   <definition name=".four.*.*" extends=".fourLayout">
+        <put-attribute name="left" value="/WEB-INF/view/{1}/left.jsp" />
+      <put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"/>
+   </definition>
+   <definition name=".four.*" extends=".fourLayout">
+        <put-attribute name="left" value="/WEB-INF/view/{1}/left.jsp" />
+          <put-attribute name="body" value="/WEB-INF/view/{1}.jsp" />
+   </definition>
+
      <!-- 3단 관리자 -->
    <definition name=".adminLayout" template="/WEB-INF/view/admin/layout/layout3.jsp">
        <put-attribute name="title" value="admin" />
@@ -46,5 +69,6 @@
 		<put-attribute name="header" value="/WEB-INF/view/layout/header2.jsp" />
     	<put-attribute name="body" value="/WEB-INF/view/{1}.jsp" />
 	</definition>
+
 
 </tiles-definitions>

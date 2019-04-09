@@ -240,7 +240,7 @@
                     <div class="footer-col col-md-4">
                         <h5>고객센터</h5>
                         <p>studyUp에 대해 궁금하신 점을 언제든지 물어보세요.</p>
-                        <a href="#" class="btn btn-large">고객센터로 이동</a>    
+                        <a href="<%=cp%>/servicecenter/main" class="btn btn-large">고객센터로 이동</a>    
                     </div>
                 </div>
             </div>

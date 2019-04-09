@@ -27,7 +27,7 @@ public class RegisterController {
 		SessionInfo info = (SessionInfo)session.getAttribute("member");		
 		
 		List<Integer> userType = info.getUserType();
-		Member member = memberService.readMember(info.getUserId());
+		String tel = info.getTel();
 		
 		for(int type: userType)	{
 			System.out.println("type: "+type);
@@ -40,7 +40,7 @@ public class RegisterController {
 		List<Bank> list = registerService.selectBank();
 		
 		model.addAttribute("mode", mode);
-		model.addAttribute("tel", member.getTel());
+		model.addAttribute("tel", tel);
 		model.addAttribute("bankList", list);
 
 		return ".member.register";
@@ -63,6 +63,12 @@ public class RegisterController {
 			model.addAttribute("mode",mode);
 			return ".member.register";
 		}			
+		
+		if(mode.equals("teacher"))
+			info.getUserType().add(3);
+		else
+			info.getUserType().add(2);	
+		
 
 		return "."+mode+".manage";
 	}

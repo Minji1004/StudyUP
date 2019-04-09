@@ -64,6 +64,7 @@
     		<mvc:exclude-mapping path="/member/logout"/>
     		<mvc:exclude-mapping path="/member/member"/>
     		<mvc:exclude-mapping path="/member/userIdCheck"/>
+    		<mvc:exclude-mapping path="/*/main"/>
     		<bean class = "com.sp.member.LoginCheckInterceptor"/>
     	</mvc:interceptor>
     </mvc:interceptors>
@@ -75,12 +76,8 @@
          <property name="maxUploadSize" value="10485760" />
     </bean>
 
-    <!-- 예외처리 -->
-<!--     
-    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver">
-        <property name="order" value="1" />
-     </bean>
- -->     
+    <!-- 예외처리 : 주석 풀어야됨 -->
+<!-- 
     <bean id="exceptionResolver"
                class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="order" value="1" />
@@ -91,10 +88,9 @@
 				<prop key="java.lang.Exception">.error.error</prop>
             </props>
         </property>
-        <!-- 기타 예외가 발생한 경우  -->
         <property name="defaultErrorView" value=".error.error"/>
-		<!-- 에러 발생시 로그 출력 -->
     	<property name="warnLogCategory" value="ERROR"/>
     </bean>
+-->
 
 </beans>

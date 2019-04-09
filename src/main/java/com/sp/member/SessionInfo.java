@@ -9,19 +9,26 @@ public class SessionInfo {
 	private String userName;
 	private int userNum;
 	private int memberLevel;
-	private String blicenseNum;
+	private String tel;
+	private List<Integer> blicenseNum;
 	private List<Integer> userType;
 	
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 	public List<Integer> getUserType() {
 		return userType;
 	}
 	public void setUserType(List<Integer> userType) {
 		this.userType = userType;
 	}
-	public String getBlicenseNum() {
+	public List<Integer> getBlicenseNum() {
 		return blicenseNum;
 	}
-	public void setBlicenseNum(String blicenseNum) {
+	public void setBlicenseNum(List<Integer> blicenseNum) {
 		this.blicenseNum = blicenseNum;
 	}
 	public String getUserId() {

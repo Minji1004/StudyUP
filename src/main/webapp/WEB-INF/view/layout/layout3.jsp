@@ -14,6 +14,7 @@
 <meta charset="UTF-8">
 <title>spring</title>
 
+	<link rel="stylesheet" href="<%=cp%>/resource/studyroom/css/srmain.css" />
 	<link rel="stylesheet" href="<%=cp%>/resource/css/lecture.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/bootstrap.min.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/jquery.fancybox.css">
@@ -45,10 +46,9 @@
 
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery.ui.datepicker-ko.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="<%=cp%>/resource/js/bootstrap.min.js"></script>
-    <script src="<%=cp%>/resource/js/jquery.fancybox.pack.js"></script>
-    <script src="<%=cp%>/resource/js/jquery.waypoints.min.js"></script>
-    <script src="<%=cp%>/resource/js/main.js"></script>
+<script src="<%=cp%>/resource/js/bootstrap.min.js"></script>
+<script src="<%=cp%>/resource/js/jquery.fancybox.pack.js"></script>
+<script src="<%=cp%>/resource/js/jquery.waypoints.min.js"></script>
+<script src="<%=cp%>/resource/js/main.js"></script>
 </body>
 </html>
