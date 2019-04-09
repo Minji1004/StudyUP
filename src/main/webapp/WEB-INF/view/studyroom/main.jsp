@@ -59,7 +59,7 @@
 	<div>
 		<!-- 페이지 맨 윗단 소개글 -->
 		<div class="col-md-12" style="padding: 20px 10px 10px 20px;">
-			<img class="col-md-1" src="<%=cp%>/resource/studyroom/bootstrap/images/icons/idea.png" height="100%" width="100%" style="max-height: 100px; max-width: 100px;" alt="...">
+			<img class="col-md-1" src="<%=cp%>/resource/studyroom/images/icons/idea.png" height="100%" width="100%" style="max-height: 100px; max-width: 100px;" alt="...">
 			<div  class="col-md-11">
 				<h2 style="font-weight: 700; font-family: '맑은고딕';">언제나, 목표를 향한 공간을</h2>
 				<p style="font-family: '맑은고딕';">목표를 향한 노력에는 그에 알맞는 공간이 필요합니다. 'StudyUp'은 당신이 공간을 찾도록 돕겠습니다.</p>
@@ -117,13 +117,13 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 						
@@ -140,9 +140,11 @@
 					
 					<!-- 사진 관련 태그들 -->
 					<div onclick="location.href='#';">
-						<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">NHK</div>
-						<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★☆☆</div>
-						<div class="srPicTagContent">어서오세요. NHK에!</div>
+						<div style="">
+							<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">NHK</div>
+							<div style="font-family:'맑은고딕'; font-weight: 600; font-size: 10pt; color : #cccccc;">평점 : ★★★☆☆</div>
+							<div class="srPicTagContent">어서오세요. NHK에!</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -160,13 +162,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -201,13 +203,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -242,13 +244,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -283,13 +285,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -324,13 +326,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -365,13 +367,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -406,13 +408,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic04.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -447,13 +449,13 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner" role="listbox">
 								<div class="item active">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic01.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic01.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic02.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
 							</div>
 							<div class="item">
-								<img class="srPic" src="<%=cp%>/resource/studyroom/bootstrap/images/pic03.jpg" alt="..." height="100%" width="100%">
+								<img class="srPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
 							</div>
 						</div>
 							<!-- Controls -->
@@ -478,7 +480,7 @@
 
 		<!-- 지도를 넣을 장소 -->
 		<div class="col-xs-12 col-sm-12 col-md-4" style="border-radius: 5px; border: 1px solid #eeeeee;" >
-			<img src="<%=cp%>/resource/studyroom/bootstrap/images/map.png" alt="..." height="100%" width="100%" style="display: flex;">
+			<img src="<%=cp%>/resource/studyroom/images/map.png" alt="..." height="100%" width="100%" style="display: flex;">
 		</div>
 		
 		
