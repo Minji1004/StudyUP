@@ -10,9 +10,7 @@ public class Member {
 	private int blicenseNum;
 	private int blicenseKindNum;
 	private String isAdmin;
-	
-	
-	
+
 	public String getIsAdmin() {
 		return isAdmin;
 	}

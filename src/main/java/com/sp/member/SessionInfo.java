@@ -7,20 +7,28 @@ import java.util.List;
 public class SessionInfo {
 	private String userId;
 	private String userName;
+	private int userNum;
 	private int memberLevel;
-	private int blicenseNum;
+	private String tel;
+	private List<Integer> blicenseNum;
 	private List<Integer> userType;
 	
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
 	public List<Integer> getUserType() {
 		return userType;
 	}
 	public void setUserType(List<Integer> userType) {
 		this.userType = userType;
 	}
-	public int getBlicenseNum() {
+	public List<Integer> getBlicenseNum() {
 		return blicenseNum;
 	}
-	public void setBlicenseNum(int blicenseNum) {
+	public void setBlicenseNum(List<Integer> blicenseNum) {
 		this.blicenseNum = blicenseNum;
 	}
 	public String getUserId() {
@@ -41,4 +49,11 @@ public class SessionInfo {
 	public void setMemberLevel(int memberLevel) {
 		this.memberLevel = memberLevel;
 	}
+	public int getUserNum() {
+		return userNum;
+	}
+	public void setUserNum(int userNum) {
+		this.userNum = userNum;
+	}
+	
 }
