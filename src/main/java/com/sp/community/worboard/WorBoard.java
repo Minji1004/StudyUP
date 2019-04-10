@@ -19,6 +19,7 @@ public class WorBoard {
 	private int depth;
 	private int orderNo;
 	private int parent;
+	private Long gap;
 
 	public int getF_PostNum() {
 		return f_PostNum;
@@ -154,5 +155,14 @@ public class WorBoard {
 
 	public void setParent(int parent) {
 		this.parent = parent;
+
+	}
+
+	public Long getGap() {
+		return gap;
+	}
+
+	public void setGap(Long gap) {
+		this.gap = gap;
 	}
 }
