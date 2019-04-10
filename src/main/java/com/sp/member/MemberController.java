@@ -29,34 +29,46 @@ public class MemberController {
 			HttpSession session,
 			Model model
 			) {
-		Member dto=service.loginMember(userId);
+		List<Member>mList =service.loginMember(userId);
 		List<Integer> list = new ArrayList<>();
-		if(dto==null ||  !userPwd.equals(dto.getUserPwd())) {
+ 		if(mList.size() == 0 ||  !mList.get(0).getUserPwd().equals(userPwd)) {
 			model.addAttribute("message", "아이디 또는 패스워드가 일치하지 않습니다.");
 			return "member/login";
 		}
-	
 		
-		SessionInfo info=new SessionInfo();
-		info.setUserNum(dto.getUserNum());  //usernum info에 추가함. (민지)
-		info.setUserName(dto.getNickname());
-		info.setUserId(dto.getUserId());
-		info.setBlicenseNum(dto.getBlicenseNum());
-		session.setMaxInactiveInterval(30*60); // 세션유지시간 30분, 기본:30분
-		session.setAttribute("member", info);
-
 		//isAdmin "0" 일 때: 일반 사용자 , 1일 때 : 관리자
 		//getBlicenseKindNum == 0 일 때  : 스터디룸 사장님, getBlicenseKindNum == 1 일 때 : 강사
+		//sessionInfo userType 에서 0:사용자, 1:관리자, 2:스터디룸 사장님, 3:강사
 		
+		SessionInfo info=new SessionInfo();
+		info.setUserName(mList.get(0).getNickname());
+		info.setUserId(mList.get(0).getUserId());
+		info.setTel(mList.get(0).getTel());
+		info.setUserNum(mList.get(0).getUserNum());
 		
-		//session userType 에서 0:사용자, 1:관리자, 2:스터디룸 사장님, 3:강사
+		if(mList.get(0).getIsAdmin().equals("0")) list.add(0);	//사용자
+		if(mList.get(0).getIsAdmin().equals("1")) list.add(1);	//관리자
 		
-		if(dto.getIsAdmin().equals("0")) list.add(0);	//사용자
-		if(dto.getIsAdmin().equals("1")) list.add(1);	//관리자
-		if(dto.getBlicenseKindNum()==0) list.add(2);	//스터디룸 사장님
-		if(dto.getBlicenseKindNum()==1) list.add(3);	//강사
+		session.setMaxInactiveInterval(30*60); // 세션유지시간 30분, 기본:30분
+		session.setAttribute("member", info);
 		
-		info.setUserType(list);	//리스트를 정리해준다.
+		List<Integer> bLicenseNumList = new ArrayList<>();
+		
+		for(Member dto : mList) {
+			//스터디룸 사장님
+			if(dto.getBlicenseKindNum()==0) { 
+				list.add(2); 
+				bLicenseNumList.add(dto.getBlicenseNum());
+			}	
+			//스터디룸 사장님
+			if(dto.getBlicenseKindNum()==1) {
+				list.add(3);	
+				bLicenseNumList.add(dto.getBlicenseNum());
+			}
+		}
+		
+		info.setBlicenseNum(bLicenseNumList);
+		info.setUserType(list);	
 
 		String uri = (String)session.getAttribute("preLoginURI");
 		session.removeAttribute("preLoginURI");
@@ -66,7 +78,6 @@ public class MemberController {
 		else
 			uri = "redirect:" + uri;
 		
-
 		return uri;
 	}
 	
@@ -98,6 +109,16 @@ public class MemberController {
 		return ".member.member";
 	}
 	
+	
+	@RequestMapping(value="/member/logout")
+	public String logout(HttpSession session) {
+		
+		session.removeAttribute("member");
+		
+		session.invalidate();
+		
+		return "redirect:/";
+	}
 
 	
 	

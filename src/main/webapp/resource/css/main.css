@@ -52,10 +52,10 @@ h5 {
 /* ==========================================================================
 	General Styles
 ========================================================================== */
-a {
+header a {
   color: white; }
 
-a:hover, a:focus {
+header a:hover, header a:focus {
   text-decoration: none;
   -moz-transition: background-color, color, 0.3s;
   -o-transition: background-color, color, 0.3s;

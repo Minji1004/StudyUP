@@ -7,12 +7,10 @@ public class Member {
 	private String birth;
 	private String picture;
 	private int enabled;
-	private String blicenseNum;
+	private int blicenseNum;
 	private int blicenseKindNum;
 	private String isAdmin;
-	
-	
-	
+
 	public String getIsAdmin() {
 		return isAdmin;
 	}
@@ -85,10 +83,10 @@ public class Member {
 	public void setEnabled(int enabled) {
 		this.enabled = enabled;
 	}
-	public String getBlicenseNum() {
+	public int getBlicenseNum() {
 		return blicenseNum;
 	}
-	public void setBlicenseNum(String blicenseNum) {
+	public void setBlicenseNum(int blicenseNum) {
 		this.blicenseNum = blicenseNum;
 	}
 	public int getBlicenseKindNum() {

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface MemberService {
-	public Member loginMember(String userId);
+	public List<Member> loginMember(String userId);
 	
 	public int insertMember(Member dto);
 	

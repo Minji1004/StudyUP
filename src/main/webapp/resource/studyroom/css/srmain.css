@@ -7,6 +7,23 @@ body {
     transition: background-color .3s;
 }
 
+#srcontianer {
+	background-position: center top;
+	min-height: 1100px;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	background-color: #FDFFF8;
+}
+
+.srcontianer {
+	background-position: center top;
+	min-height: 885px;
+	width: 100vw;
+	margin-top: 80px;
+	margin-left: calc(-50vw + 50%);
+	background-color: #FDFFF8;
+}
+
 .srMySidenav {
     height: 240px;
     width: 0;
@@ -14,7 +31,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333333;
+    background-color: #3e4e32;
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
@@ -62,9 +79,23 @@ body {
   #srMySidenav {width: 120px;}
 }
 
-
+.srSelect {
+	padding:5px 0px 5px 0px; 
+	height: 45px ;
+	background-color: #cadfcb;
+	border-right : 1px solid #678253;
+	border-bottom : 1px solid #678253; 
+	border-radius: 5px;	
+}
+  
 
 /* --------------------- 메뉴 바 --------------------- */
+
+.thumbnail {
+	text-align: center; 
+	cursor:pointer;
+	padding-bottom : 10px;
+}
 
 .srPic {
 	display: flex;
@@ -72,8 +103,37 @@ body {
 }
 
 .srPicTagContent {
-	padding: 5px  10px 5px 10px;
+	background-color: #f6f6f6;
+	border-right : 1px solid #eeeeee;
+	border-bottom : 1px solid #eeeeee; 
+	margin: 5px 3px 8px 3px;
+	padding: 5px 8px 5px 8px;
 	font-family:'맑은고딕';
 	font-size: 8pt;
-	min-height: 80px;
+	min-height: 90px;
+	line-height: 90px;
+	text-align: center;
 }
+
+.srPicTagContent div {
+	line-height: 1.6;
+	display : inline-block;
+	vertical-align: middle;
+}
+
+.btn-srModal {
+	float: right;
+	margin: 0px 5px 25px 0px;
+	border-radius: 3px;
+	border : 0px;
+	background-color: #769560;
+	color: #ffffff;
+	padding: 3px 10px 3px 10px;
+	font-size: 10pt;
+}
+
+.pagination {
+	margin-top:-5px;
+}
+
+

@@ -24,17 +24,17 @@
 
 		<div id="login">
 			<c:if test="${empty sessionScope.member}">
-				<a href="<%=cp%>/member/login">로그인</a>
+				<a href="<%=cp%>/member/login" style="color: white;">로그인</a>
                    		 &nbsp;|&nbsp;
-               		 <a href="<%=cp%>/member/member">회원가입</a>
+               		 <a href="<%=cp%>/member/member" style="color: white;">회원가입</a>
 			</c:if>
 			<c:if test="${not empty sessionScope.member}">
 				<span style="color: white;">${sessionScope.member.userName}</span>님
                		 	 &nbsp;|&nbsp;
-               			 <a href="<%=cp%>/">로그아웃</a>
+               			 <a href="<%=cp%>/member/logout" style="color: white;">로그아웃</a>
 				<c:if test="${sessionScope.member.userId=='admin'}">
                    			 &nbsp;|&nbsp;
-                   		 	<a href="<%=cp%>/admin">관리자</a>
+                   		 	<a href="<%=cp%>/admin" style="color: white;">관리자</a>
 				</c:if>
 			</c:if>
 		</div>

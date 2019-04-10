@@ -14,6 +14,7 @@
 <meta charset="UTF-8">
 <title>spring</title>
 
+	<link rel="stylesheet" href="<%=cp%>/resource/studyroom/css/srmain.css" />
 	<link rel="stylesheet" href="<%=cp%>/resource/css/lecture.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/bootstrap.min.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/jquery.fancybox.css">
@@ -21,10 +22,6 @@
     <link rel="stylesheet" href="<%=cp%>/resource/css/responsive.css">
     <link rel="stylesheet" href="<%=cp%>/resource/css/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- srmain.css : studyroom 스타일 -->
-    <link rel="stylesheet" href="<%=cp%>/resource/studyroom/css/srmain.css" />
-    
 <link rel="stylesheet" href="<%=cp%>/resource/jquery/css/smoothness/jquery-ui.min.css" type="text/css">
 
 <script type="text/javascript" src="<%=cp%>/resource/jquery/js/jquery-1.12.4.min.js"></script>
