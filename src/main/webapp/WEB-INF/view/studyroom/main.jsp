@@ -23,6 +23,7 @@
 	
 </script>
 
+
 <section class="srcontianer" style="height:75vh;">
 	<div class="container">
 	<!-- 
@@ -37,7 +38,7 @@
 	-->
 	
 	<div id="srMain">
-		<span style="font-size:40px; cursor:pointer" onclick="srOpenNav()">☰ </span>
+		<div class="srMenuBtn" onclick="srOpenNav()">☰ </div>
 	</div>
 	<div id="srMySidenav" class="srMySidenav">
 		<a>&nbsp;</a>		
@@ -53,8 +54,8 @@
 	<div>
 		<!-- 페이지 맨 윗단 소개글 -->
 		<div class="col-md-12" style="padding: 20px 10px 10px 20px;">
-			<img class="col-md-1" src="<%=cp%>/resource/studyroom/images/icons/idea.png" height="100%" width="100%" style="max-height: 100px; max-width: 100px;" alt="...">
-			<div  class="col-md-11">
+			<!-- <img class="col-md-1" src="<%=cp%>/resource/studyroom/images/icons/idea.png" height="100%" width="100%" style="max-height: 100px; max-width: 100px;" alt="...">  -->
+			<div  class="col-md-12">
 				<h2 style="font-weight: 700; font-family: '맑은고딕';">언제나, 목표를 향한 공간을</h2>
 				<p style="font-family: '맑은고딕';">목표를 향한 노력에는 그에 알맞는 공간이 필요합니다. 'StudyUp'은 당신이 공간을 찾도록 돕겠습니다.</p>
 			</div>
@@ -370,6 +371,7 @@
 							</a>
 						</div>
 					</div>
+
 					<div>
 						<div style="min-height:150px;">
 							<div style="padding: 20px 10px 0px 10px; font-family:'맑은고딕'; font-weight: 600; font-size: 14pt;">카페나라</div>
@@ -408,26 +410,70 @@
 	</div>
 	
 	<!-- The Modal -->
-	<div class="modal" id="srModal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-	
-				<!-- Modal Header -->
-				<div class="modal-header">
-					<h4 class="modal-title">Modal Heading</h4>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-				</div>
-	
+	<div class="modal modal-center" id="srModal">
+		<div class="modal-dialog modal-center modal-eight">
+			<div class="modal-content modal-eight">
 				<!-- Modal body -->
 				<div class="modal-body">
-					Modal body..
+					<div class="srModalDetail">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<button type="button" class="btn-srModalUpClose" data-dismiss="modal" style="display : inline-block; vartical-align:top;">x</button>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">	
+							<div class="srFirstModal">
+								<div class="srModalTitleArea">
+									<h3 class="srModalTitle">오성스터디카페</h3>
+								</div>
+								<div class="srModalPicFrame">
+									<div id="slidePic7" class="carousel slide" data-ride="carousel" data-interval="false">
+										<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#slidePic7" data-slide-to="0"></li>
+											<li data-target="#slidePic7" data-slide-to="1"></li>
+											<li data-target="#slidePic7" data-slide-to="2"></li>
+										</ol>
+										
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img class="srModalPic" src="<%=cp%>/resource/studyroom/images/pic02.jpg" alt="..." height="100%" width="100%">
+											</div>
+											<div class="item">
+												<img class="srModalPic" src="<%=cp%>/resource/studyroom/images/pic03.jpg" alt="..." height="100%" width="100%">
+											</div>
+											<div class="item">
+												<img class="srModalPic" src="<%=cp%>/resource/studyroom/images/pic04.jpg" alt="..." height="100%" width="100%">
+											</div>
+											
+										</div>
+										<!-- Controls -->
+										<a class="left carousel-control" href="#slidePic7" role="button" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#slidePic7" role="button" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+								<div class="srModalIntro">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							&nbsp;
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4">
+							&nbsp;
+						</div>
+					</div>
+					
+					<div class="modalButtons">
+						<button type="button" class="btn-srModal" data-dismiss="modal">Close</button>
+					</div>
 				</div>
-	
-				<!-- Modal footer -->
-				<div class="modal-footer">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				</div>
-	
 			</div>
 		</div>
 	</div>	
